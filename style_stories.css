@@ -22,7 +22,7 @@ body {
     overflow: hidden;
 }
 .story-image {
-    width: 150px; /* Adjust this size as needed */
+    width: 200px; /* Adjust this size as needed */
     height: auto; /* Keeps the aspect ratio */
     max-width: 100%; /* Ensures it doesn't overflow */
     position: absolute; /* Allow JS to place them */
@@ -32,7 +32,7 @@ body {
 /* Story Image Styling */
 .story-image {
     position: absolute; /* Enables random placement */
-    width: 150px;
+    width: 200px;
     height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
