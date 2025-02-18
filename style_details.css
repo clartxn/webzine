@@ -40,14 +40,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Image Styling */
-img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
 /* Story Text Styling */
 .story {
     font-size: 1.1rem;
