@@ -1,1 +1,44 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #A3D8F4, #B2C8A0); /* Blue and green gradient */
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Story Image Styling */
+.story-image {
+    position: absolute;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hover Effect */
+.story-image:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
