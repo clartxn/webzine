@@ -32,7 +32,7 @@ body {
     display: inline-block;
     padding: 15px 30px;
     background-color: #B2C8A0; /* Sage Green */
-    color: black;
+    color: #f23461;
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 5px;
@@ -42,5 +42,5 @@ body {
 /* Button Hover Effect */
 .button:hover {
     background-color: white; /* Turns white on hover */
-    color: #f23461;
+    color: #ff688c;
 }
