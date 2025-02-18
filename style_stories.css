@@ -34,5 +34,5 @@ body {
 
 /* Hover Effect */
 .story-image:hover {
-    transform: scale(1.5); /* enlarge on hover */
+    transform: scale(1.3); /* enlarge on hover */
 }
