@@ -22,8 +22,10 @@ body {
     overflow: hidden;
 }
 .story-image {
+    width: 100px; /* Adjust this size as needed */
+    height: auto; /* Keeps the aspect ratio */
+    max-width: 100%; /* Ensures it doesn't overflow */
     position: absolute; /* Allow JS to place them */
-}
 
 }
 
