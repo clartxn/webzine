@@ -18,6 +18,13 @@ body {
     position: relative; /* Allows absolute positioning of images inside */
     width: 100%;
     min-height: 100vh; /* Ensure it grows with content */
+    height: 500vh; /* Adjust this to control the page length */
+    overflow: hidden;
+}
+.story-image {
+    position: absolute; /* Allow JS to place them */
+}
+
 }
 
 /* Story Image Styling */
