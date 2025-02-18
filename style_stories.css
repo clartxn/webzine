@@ -25,20 +25,14 @@ body {
     position: absolute;
     width: 150px; /* Adjust size as needed */
     height: auto;
-    border: 3px solid white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .story-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
 }
 
 /* Hover Effect */
 .story-image:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.5); /* enlarge on hover */
 }
