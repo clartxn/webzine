@@ -42,5 +42,5 @@ body {
 /* Button Hover Effect */
 .button:hover {
     background-color: white; /* Turns white on hover */
-    color: black;
+    color: #f23461;
 }
