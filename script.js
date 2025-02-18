@@ -1,22 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const container = document.querySelector(".container");
     const images = document.querySelectorAll(".story-image");
+    const container = document.querySelector(".container");
 
-    images.forEach(image => {
-        // Get container size
-        let containerWidth = container.clientWidth;
-        let containerHeight = container.clientHeight;
+    function getRandomPosition(imgWidth, imgHeight) {
+        const containerWidth = container.clientWidth;
+        const containerHeight = container.clientHeight;
+        
+        let left, top, isOverlapping;
+        let attempts = 0;
+        
+        do {
+            isOverlapping = false;
+            left = Math.random() * (containerWidth - imgWidth);
+            top = Math.random() * (containerHeight - imgHeight);
+            
+            // Check if new position overlaps with any existing images
+            images.forEach(img => {
+                const imgRect = img.getBoundingClientRect();
+                if (
+                    left < imgRect.right &&
+                    left + imgWidth > imgRect.left &&
+                    top < imgRect.bottom &&
+                    top + imgHeight > imgRect.top
+                ) {
+                    isOverlapping = true;
+                }
+            });
+            
+            attempts++;
+        } while (isOverlapping && attempts < 50); // Prevent infinite loops
 
-        // Set max distance between images
-        let maxDistance = 100; // Change this to adjust spacing
+        return { left, top };
+    }
 
-        // Generate random positions within the constraints
-        let randomX = Math.min(Math.random() * containerWidth, containerWidth - maxDistance);
-        let randomY = Math.min(Math.random() * containerHeight, containerHeight - maxDistance);
-
-        // Apply position styles
-        image.style.position = "absolute";
-        image.style.left = `${randomX}px`;
-        image.style.top = `${randomY}px`;
+    images.forEach(img => {
+        const { left, top } = getRandomPosition(img.clientWidth, img.clientHeight);
+        img.style.left = `${left}px`;
+        img.style.top = `${top}px`;
     });
 });
