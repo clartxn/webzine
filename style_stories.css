@@ -29,6 +29,12 @@ body {
 
 }
 
+/* Paragraph Styling */
+p {
+    font-size: 0.8rem; /* Small text */
+    color: #f23461; /* Hot pink */
+}
+
 /* Story Image Styling */
 .story-image {
     position: absolute; /* Enables random placement */
