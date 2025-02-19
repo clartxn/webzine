@@ -33,6 +33,12 @@ body {
 p {
     font-size: 1rem; /* Small text */
     color: #f23461; /* Hot pink */
+    position: absolute; /* Allows precise positioning */
+    top: 30px; /* Moves it down from the top */
+    left: 50%; /* Centers horizontally */
+    transform: translateX(-50%); /* Adjusts for perfect centering */
+    text-align: center; /* Ensures text stays centered */
+    width: 100%; /* Ensures it doesn’t shrink */
 }
 
 /* Story Image Styling */
