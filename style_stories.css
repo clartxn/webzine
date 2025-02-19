@@ -21,13 +21,6 @@ body {
     height: 500vh; /* Adjust this to control the page length */
     overflow: hidden;
 }
-.story-image {
-    width: 200px; /* Adjust this size as needed */
-    height: auto; /* Keeps the aspect ratio */
-    max-width: 100%; /* Ensures it doesn't overflow */
-    position: absolute; /* Allow JS to place them */
-
-}
 
 /* Paragraph Styling */
 p {
@@ -43,10 +36,10 @@ p {
 
 /* Story Image Styling */
 .story-image {
-    position: absolute; /* Enables random placement */
-    width: 200px;
-    height: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 120px; /* Adjust this size as needed */
+    height: auto; /* Keeps the aspect ratio */
+    max-width: 100%; /* Ensures it doesn't overflow */
+    position: absolute; /* Allow JS to place them */
 }
 
 /* Ensure images are fully displayed */
