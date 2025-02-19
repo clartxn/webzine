@@ -27,12 +27,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Paragraph Styling */
-p {
-    font-size: 0.8rem; /* Small text */
-    color: #f23461; /* Hot pink */
-}
-
 /* Button Styling */
 .button {
     display: inline-block;
