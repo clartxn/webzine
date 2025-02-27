@@ -22,8 +22,8 @@ body {
     overflow: hidden;
 }
 
-/* Paragraph Styling */
-p {
+/* Marquee Styling */
+marquee {
     font-size: 1rem; /* Small text */
     color: #f23461; /* Hot pink */
     position: absolute; /* Allows precise positioning */
